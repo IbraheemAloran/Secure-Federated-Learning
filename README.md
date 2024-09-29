@@ -1,2 +1,7 @@
 # Secure-Federated-Learning
-Code for the paper "A Secure Federated Learning Approach: Preventing Model Poisoning Attacks via Optimal Clustering"
+Code for the paper "A Secure Federated Learning Approach: Preventing Model Poisoning Attacks via Optimal Clustering" [Link to paper on IEEE](https://ieeexplore.ieee.org/abstract/document/10651973/authors#authors)
+
+Federated Learning (FL) is a machine learning architecture that enables many participants to train a single machine learning model while preserving the security and privacy of each participant. FL is vulnerable to model poisoning attacks where an attacker sends poisoned model updates to compromise the global model. Existing defenses such as Byzantine-robust methods or malicious detection systems attempt to defend the global model from attackers. However, they can only resist a small number of malicious clients and attacks. In this work, we present an analysis on the latest defense FLDetector and propose an improved method. One issue with this method is that FLDetector always clusters clients into two clusters when it can regardless of the optimal cluster count. This causes it to misclassify clients to the wrong label resulting in removing the wrong clients from the training phase. This prevents the machine learning model from learning valuable information while allowing malicious clients to continue attacking the global model. The proposed approach utilizes Gap statistics to identify the ideal number of groups to separate the users. This enhances the filtering systems for attackers and reduces the false labelling of legitimate users in a Federated Learning environment. Our experimental results demonstrate an improvement compared to the baseline approach.
+
+
+
